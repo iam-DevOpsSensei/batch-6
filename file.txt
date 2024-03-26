@@ -1,4 +1,3 @@
-If you consider a file in your Working Directory, it can be in three possible states.
 
 It can be staged. This means the files with the updated changes are marked to be committed to the local repository but not yet committed.
 
