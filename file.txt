@@ -1,4 +1,4 @@
-.
+. added kdnfvlkwdvkldk 
 It can be staged. This means the files with the updated changes are marked to be committed to the local repository but not yet committed.
 
 It can be modified. This means the files with the updated changes are not yet stored in the local repository.
