@@ -58,6 +58,8 @@ git diff branch_A branch_B: Compares the differences between two branches (branc
 
 Sometimes, you might want to compare how a certain file differs in two branches. You can do this simply by adding the file's path:
 
+Added functionality 
+
 
 
 $ git diff main feature/login index.html
