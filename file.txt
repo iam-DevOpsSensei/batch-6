@@ -1,0 +1,67 @@
+If you consider a file in your Working Directory, it can be in three possible states.
+
+It can be staged. This means the files with the updated changes are marked to be committed to the local repository but not yet committed.
+
+It can be modified. This means the files with the updated changes are not yet stored in the local repository.
+
+It can be committed. This means that the changes you made to your file are safely stored in the local repository.
+
+git add is a command used to add a file that is in the working directory to the staging area.If you need to know exactly what changes you made, you can just type git statusand see “Changes to be committed” in green and “Changes not staged for commit” in red.
+
+If you want to add every file you change, just type git add --all .
+
+$ git add .
+# Adds all the files in the local repository and stages them for commit
+
+Before we commit let’s see what files are staged:
+
+
+$ git status # Lists all new or modified files to be committed
+Commit your staged changes
+
+
+git commit
+This will ask you to type in a commit message. The commit message helps to understand what was changed.
+
+The -m the flag is used to write a message. For example:
+
+
+
+git commit -m “Add a new feature”
+View Commit History: You can use the git log command to see the history of commits you made to your files: git log
+Git Diff Command:
+
+The git diff command in Git is used to compare and display the differences between various aspects of your Git repository, such as file changes, commits, branches, and more.
+
+Diffing Between Commits:
+
+git diff commit_A commit_B: Compares the changes between two specific commits (commit_A and commit_B). This can be useful for reviewing the differences between different versions of your project.
+
+Working Directory Changes:
+
+git diff: Displays the differences between the current working directory and the last committed state. This is useful for reviewing local changes before committing.
+
+Diffing Staged Changes:
+
+git diff --staged or git diff --cached: Shows the differences between the files in the staging area (files you've added using git add) and the last commit. This helps you review what's about to be committed.
+
+# Staged changes in a certain file...--> $ git diff --staged index.html 
+
+# Staged changes in all local files... ---->  $ git diff --staged
+
+Diffing Between Branches:
+
+git diff branch_A branch_B: Compares the differences between two branches (branch_A and branch_B). It's useful for understanding what has changed between branches.
+
+      $ git diff main feature/login
+
+  compare a certain file in two different branches?
+
+Sometimes, you might want to compare how a certain file differs in two branches. You can do this simply by adding the file's path:
+
+
+
+$ git diff main feature/login index.html
+This will show you how the file "index.html" was changed in the feature/login branch, compared to how it looks in the main branch.
+
+
