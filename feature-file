@@ -6,3 +6,4 @@ git pull
 git fetch
 git merge
 merge conflict
+git fetch vs git pull
